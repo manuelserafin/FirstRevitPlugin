@@ -1,0 +1,14 @@
+C:\Users\Manuel\Documents\Proyectos\cursoPluginRevit\revitCreatingC#Plugin\01_Creating a Simple Plugin\MyRevitCommands\bin\Debug\MyRevitCommands.addin
+C:\Users\Manuel\Documents\Proyectos\cursoPluginRevit\revitCreatingC#Plugin\01_Creating a Simple Plugin\MyRevitCommands\bin\Debug\MyRevitCommands.dll
+C:\Users\Manuel\Documents\Proyectos\cursoPluginRevit\revitCreatingC#Plugin\01_Creating a Simple Plugin\MyRevitCommands\bin\Debug\MyRevitCommands.pdb
+C:\Users\Manuel\Documents\Proyectos\cursoPluginRevit\revitCreatingC#Plugin\01_Creating a Simple Plugin\MyRevitCommands\obj\Debug\MyRevitCommands.csproj.AssemblyReference.cache
+C:\Users\Manuel\Documents\Proyectos\cursoPluginRevit\revitCreatingC#Plugin\01_Creating a Simple Plugin\MyRevitCommands\obj\Debug\MyRevitCommands.csproj.CoreCompileInputs.cache
+C:\Users\Manuel\Documents\Proyectos\cursoPluginRevit\revitCreatingC#Plugin\01_Creating a Simple Plugin\MyRevitCommands\obj\Debug\MyRevitCommands.dll
+C:\Users\Manuel\Documents\Proyectos\cursoPluginRevit\revitCreatingC#Plugin\01_Creating a Simple Plugin\MyRevitCommands\obj\Debug\MyRevitCommands.pdb
+C:\Users\Manuel\Documents\Proyectos\cursoPluginRevit\revitCreatingC#Plugin\01_CreatingASimplePlugin\MyRevitCommands\bin\Debug\MyRevitCommands.addin
+C:\Users\Manuel\Documents\Proyectos\cursoPluginRevit\revitCreatingC#Plugin\01_CreatingASimplePlugin\MyRevitCommands\bin\Debug\MyRevitCommands.dll
+C:\Users\Manuel\Documents\Proyectos\cursoPluginRevit\revitCreatingC#Plugin\01_CreatingASimplePlugin\MyRevitCommands\bin\Debug\MyRevitCommands.pdb
+C:\Users\Manuel\Documents\Proyectos\cursoPluginRevit\revitCreatingC#Plugin\01_CreatingASimplePlugin\MyRevitCommands\obj\Debug\MyRevitCommands.csproj.AssemblyReference.cache
+C:\Users\Manuel\Documents\Proyectos\cursoPluginRevit\revitCreatingC#Plugin\01_CreatingASimplePlugin\MyRevitCommands\obj\Debug\MyRevitCommands.csproj.CoreCompileInputs.cache
+C:\Users\Manuel\Documents\Proyectos\cursoPluginRevit\revitCreatingC#Plugin\01_CreatingASimplePlugin\MyRevitCommands\obj\Debug\MyRevitCommands.dll
+C:\Users\Manuel\Documents\Proyectos\cursoPluginRevit\revitCreatingC#Plugin\01_CreatingASimplePlugin\MyRevitCommands\obj\Debug\MyRevitCommands.pdb

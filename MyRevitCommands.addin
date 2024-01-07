@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Name>MyRevitCommands</Name>
+		<Assembly>C:\Users\Manuel\Documents\Proyectos\cursoPluginRevit\revitCreatingC#Plugin\01_CreatingASimplePlugin\MyRevitCommands\bin\Debug\MyRevitCommands.dll</Assembly>
+		<AddInId>699B6B3C-2366-4B1D-BB42-3C2D93F7134C</AddInId>
+		<FullClassName>MyRevitCommands.GetElementId</FullClassName>
+		<Text>GetElementId</Text>
+		<Description>Get the ID from an element</Description>
+		<VendorId>Manuel</VendorId>
+		<VendorDescription>@Learnlanutria</VendorDescription>
+		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>		
+	</AddIn>
+</RevitAddIns>
