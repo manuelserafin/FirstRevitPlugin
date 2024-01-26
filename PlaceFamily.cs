@@ -9,7 +9,6 @@ using Autodesk.Revit.Attributes;
 
 namespace MyRevitCommands
 {
-    [TransactionAttribute(TransactionMode.Manual)]
     public class PlaceFamily : IExternalCommand
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
@@ -21,7 +20,18 @@ namespace MyRevitCommands
             Document doc = uidoc.Document;
 
             //Get Family Symbol
+            FilteredElementCollector collector = new FilteredElementCollector(doc);
+            IList<Element> symbols = collector.OfClass(typeof(FamilySymbol)).WhereElementIsElementType().ToElements();
 
+            FamilySymbol symbol = null;
+            foreach (Element ele in symbols)
+            {
+                if (ele.Name == "1525 x 762mm")
+                {
+                    symbol = ele as FamilySymbol;
+                    break;
+                }
+            }
 
             try
             {
@@ -29,7 +39,12 @@ namespace MyRevitCommands
                 {
                     trans.Start();
 
+                    if (!symbol.IsActive)
+                    {
+                        symbol.Activate();
+                    }
 
+                    doc.Create.NewFamilyInstance(new XYZ(0, 0, 0), symbol, Autodesk.Revit.DB.Structure.StructuralType.NonStructural);
 
                     trans.Commit();
                 }
