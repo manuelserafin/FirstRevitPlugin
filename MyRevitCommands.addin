@@ -26,4 +26,17 @@
 		<VendorDescription>@Learnlanutria</VendorDescription>
 		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
 	</AddIn>
+	<AddIn Type="Command">
+		<Name>MyRevitCommands</Name>
+		<Assembly>MyRevitCommands.dll</Assembly>
+		<AddInId>
+			7560E5D8-4108-434A-892E-4FA996DD42EF
+		</AddInId>
+		<FullClassName>MyRevitCommands.DeleteElement</FullClassName>
+		<Text>DeleteElement</Text>
+		<Description>Deletes an Element from the document</Description>
+		<VendorId>Manuel</VendorId>
+		<VendorDescription>@Learnlanutria</VendorDescription>
+		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+	</AddIn>
 </RevitAddIns>

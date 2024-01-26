@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CollectWindows.cs" />
+    <Compile Include="DeleteElement.cs" />
     <Compile Include="GetElementId.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
