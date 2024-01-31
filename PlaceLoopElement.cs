@@ -10,7 +10,7 @@ using Autodesk.Revit.Attributes;
 namespace MyRevitCommands
 {
     [TransactionAttribute(TransactionMode.Manual)]
-    public class PlaceLineElement : IExternalCommand
+    public class PlaceLoopElement : IExternalCommand
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
@@ -19,13 +19,6 @@ namespace MyRevitCommands
 
             //Get Document
             Document doc = uidoc.Document;
-
-            //Get Level
-            Level level = new FilteredElementCollector(doc)
-                .OfCategory(BuiltInCategory.OST_Levels)
-                .WhereElementIsNotElementType()
-                .Cast<Level>()
-                .First(x => x.Name == "Ground Floor");
 
             //Create Points 
             XYZ p1 = new XYZ(-10, -10, 0);
@@ -46,15 +39,22 @@ namespace MyRevitCommands
             curves.Add(l3);
             curves.Add(l4);
 
+            //Create Curve Loop
+            CurveLoop crvLoop = CurveLoop.Create(curves);
+            double offset = UnitUtils.ConvertToInternalUnits(100, DisplayUnitType.DUT_MILLIMETERS);
+            CurveLoop offsetcrv = CurveLoop.CreateViaOffset(crvLoop, offset, new XYZ(0, 0, 1));
+
+            CurveArray cArray = new CurveArray();
+            foreach (Curve c in offsetcrv)
+            {
+                cArray.Append(c);
+            }
             try
             {
                 using (Transaction trans = new Transaction(doc, "Place Family"))
                 {
                     trans.Start();
-                    foreach (Curve c in curves)
-                    {
-                        Wall.Create(doc, c, level.Id, false);
-                    }
+                    doc.Create.NewFloor(cArray, false);
                     trans.Commit();
                 }
                 return Result.Succeeded;
@@ -68,4 +68,3 @@ namespace MyRevitCommands
         }
     }
 }
-
