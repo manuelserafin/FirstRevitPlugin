@@ -39,4 +39,30 @@
 		<VendorDescription>@Learnlanutria</VendorDescription>
 		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
 	</AddIn>
+	<AddIn Type="Command">
+		<Name>MyRevitCommands</Name>
+		<Assembly>MyRevitCommands.dll</Assembly>
+		<AddInId>
+			2B5321F3-56B3-4D6A-BEB0-A52A5B068F79
+		</AddInId>
+		<FullClassName>MyRevitCommands.PlaceFamily</FullClassName>
+		<Text>PlaceFamily</Text>
+		<Description>Place family in the document</Description>
+		<VendorId>Jeremy</VendorId>
+		<VendorDescription>@Learndynamo</VendorDescription>
+		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+	</AddIn>
+	<AddIn Type="Command">
+		<Name>MyRevitCommands</Name>
+		<Assembly>MyRevitCommands.dll</Assembly>
+		<AddInId>
+			CB137838-763D-48A0-8FB6-63048B8E92E9
+		</AddInId>
+		<FullClassName>MyRevitCommands.PlaceLineElement</FullClassName>
+		<Text>PlaceLineElement</Text>
+		<Description>Place line element in the document</Description>
+		<VendorId>Jeremy</VendorId>
+		<VendorDescription>@Learndynamo</VendorDescription>
+		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+	</AddIn>
 </RevitAddIns>
